@@ -6,15 +6,15 @@ class Movie{
   public $yearOfPublication;
   public $allThePublication = getAllYears($yearOfOriginalPublication,$yearOfPublication);
 
-  function __construct($movieName,$author,$yearOfOriginalPublication,$yearOfPublication){
+  public function __construct($movieName,$author,$yearOfOriginalPublication,$yearOfPublication){
     $this->movieName = $movieName;
     $this->author = $author;
     $this->yearOfOriginalPublication = $yearOfOriginalPublication;
     $this->yearOfPublication = $yearOfPublication;
-  }
-  function getAllYears($yearOfOriginalPublication,$yearOfPublication)
+  };
+  public function getAllYears($yearOfOriginalPublication,$yearOfPublication)
   {
-  return '$yearOfOriginalPublication + $yearOfPublication';
+  return $yearOfOriginalPublication + $yearOfPublication;
   };
 
 };
