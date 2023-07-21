@@ -11,15 +11,19 @@ class Movie{
     $this->author = $author;
     $this->yearOfOriginalPublication = $yearOfOriginalPublication;
     $this->yearOfPublication = $yearOfPublication;
-  };
+  }
+
+
   public function getAllYears() {
     return $this->yearOfOriginalPublication + $this->yearOfPublication;
-  };
+  }
 
 };
 $movie = new Movie('Quasi bianca neve', 'fratelli  Grimm', '1938' ,'2023');
 $movie2 = new Movie('Cenerentola', 'fratelli  Grimm', '1950' ,'2015');
-var_dump($movie getAllYears());
-var_dump($movie2 getAllYears());
-;
+var_dump($movie->getAllYears());
+var_dump($movie2->getAllYears());
+var_dump($movie);
+var_dump($movie2);
+
 ?>
