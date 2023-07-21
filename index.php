@@ -27,3 +27,37 @@ var_dump($movie);
 var_dump($movie2);
 
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<h1>Movie Information</h1>
+    <ul>
+        <li>
+            <strong>Movie:</strong> <?php echo $movie->movieName; ?>
+        </li>
+        <li>
+            <strong>Author:</strong> <?php echo $movie->author; ?>
+        </li>
+        <li>
+            <strong>Years:</strong> <?php echo $movie->getAllYears(); ?>
+        </li>
+    </ul>
+    
+    <ul>
+        <li>
+            <strong>Movie:</strong> <?php echo $movie2->movieName; ?>
+        </li>
+        <li>
+            <strong>Author:</strong> <?php echo $movie2->author; ?>
+        </li>
+        <li>
+            <strong>Years:</strong> <?php echo $movie2->getAllYears(); ?>
+        </li>
+    </ul>
+</body>
+</html>
