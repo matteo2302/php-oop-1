@@ -15,7 +15,7 @@ class Movie{
 
 
   public function getAllYears() {
-    return $this->yearOfOriginalPublication + $this->yearOfPublication;
+    return $this->yearOfOriginalPublication . '' . $this->yearOfPublication;
   }
 
 };
